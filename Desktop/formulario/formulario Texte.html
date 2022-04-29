@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Formulario </title>
+        
+</head>
+
+<body bgcolor="silver">
+    <center><div ><h3>Formulario para Sites </h3>
+         </div></center>
+    <!-- Inicialização do formulário -->
+<center><form action="/url" method="post" >
+    <p><!-- Campo de texto curto para nome -->
+    
+    <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="usuario_nome" maxlength="15" />
+    </div></p>
+
+    <!-- Campo de texto curto para telefone -->
+    <p><div>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="usuario_telefone" required placeholder="(xx) xxxxx-xxxx" maxlength="11"/>
+        </div> </p>
+
+    <!-- Campo do tipo email -->
+    <p><div>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="usuario_email" />
+    </div></p>
+
+    <!--Campos radio para usuário escolher uma opção -->
+    <div>
+    <label for="opcao">Dúvida</label>
+    <input type="radio" id="opcao" name="escolha" />
+    <label for="opcao1">Reclamação</label>
+    <input type="radio" id="opcao1" name="escolha" />
+    </div>
+
+    <!-- Caixa de texto para usuário descrever sua mensagem -->
+    <div>
+    <label for="msg">Mensagem:</label>
+    <textarea id="msg" name="usuario_msg" maxlength="500" rows="10" cols="50"></textarea>
+</div>
+<!-- Botão de envio -->
+<div class="button">
+<button type="submit">Enviar</button>
+</div>
+</form></center>
+
+</body>
+</html>
